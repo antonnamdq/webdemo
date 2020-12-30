@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>New Product</h1>
+        <br>
+        <div class="add-form">
+            <form action="/doInsert" method="post">
+                <div class="input-fields">
+                    <input type="text" name="txtName" id="" placeholder="Name">
+                    <br>
+                    <input type="text" name="txtPrice" id="" placeholder="Price">
+                    <br>
+                    <input type="text" name="txtSize" id="" placeholder="Size">
+                    <br>
+                    <input type="text" name="txtOrigin" id="" placeholder="Origin">
+                    <br>
+                    <input class="btn" type="submit" value="Add">
+                    <br>
+                    <a href="/">Home</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {{> footer}}
+</body>
+</html>

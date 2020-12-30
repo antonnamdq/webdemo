@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Edit Product</h1>
+        <br>
+        <div class="add-form">
+
+            <form action="/doUpdate" method="post">
+                <div class="input-fields">
+                    <input type="hidden" name="id" value="{{model._id}}">
+                    <input type="text" name="txtName" value="{{model.productName}}">
+                    <br>
+                    <input type="text" name="txtPrice" value="{{model.price}}">
+                    <br>
+                    <input type="text" name="txtSize" value="{{model.size}}">
+                    <br>
+                    <input type="text" name="txtOrigin" value="{{model.size}}">
+                    <br>
+                    <input class="btn" type="submit" value="Update">
+                    <br>
+                    <a href="/">Home</a>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    {{> footer}}
+</body>
+
+</html>
